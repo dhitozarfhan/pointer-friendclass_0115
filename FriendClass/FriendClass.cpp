@@ -3,8 +3,7 @@
 using namespace std;
 
 class siswa;
-class orang
-{
+class orang {
 private:
 	string nama;
 
@@ -13,35 +12,33 @@ public:
 	friend class siswa;
 };
 
-class siswa
-{
+class siswa {
 private:
 	int id;
 public:
-	void setid(int pid);
+	void setId(int pid);
 	void displayAll(orang& a);
 };
 
-void siswa::displayAll(orang&a)
-{
+void siswa::displayAll(orang& a) {
 	cout << id << endl
 		<< a.nama;
 }
-
-void orang::setNama(string pNama)
-{
+void orang::setNama(string pNama) {
 	nama = pNama;
 }
 
+void siswa::setId(int pId)
 {
-	id = pid;
+	id = pId;
 }
+
 int main()
 {
 	orang joko;
-	joko.setNama("jokosusilo");
+	joko.setNama("Joko Susilo");
 	siswa joko_siswa;
-	joko_siswa.setid(1);
+	joko_siswa.setId(1);
 	joko_siswa.displayAll(joko);
 	return 0;
 }

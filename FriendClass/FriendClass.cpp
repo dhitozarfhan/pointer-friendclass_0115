@@ -19,7 +19,13 @@ private:
 	int id;
 public:
 	void setid(int pid);
-	void displayA11(orang& a);
+	void displayAll(orang& a);
 };
+
+void siswa::displayAll(orang&a)
+{
+	cout << id << endl
+		<< a.nama;
+}
 
 

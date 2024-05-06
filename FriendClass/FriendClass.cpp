@@ -33,3 +33,15 @@ void orang::setNama(string pNama)
 	nama = pNama;
 }
 
+{
+	id = pid;
+}
+int main()
+{
+	orang joko;
+	joko.setNama("jokosusilo");
+	siswa joko_siswa;
+	joko_siswa.setid(1);
+	joko_siswa.displayAll(joko);
+	return 0;
+}
